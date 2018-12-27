@@ -1,0 +1,1 @@
+the test plan has been written out to be inputted in order. It shows the steps and expected outputs of proper commands and errors

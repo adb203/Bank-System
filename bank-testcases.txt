@@ -1,0 +1,133 @@
+Testcases:
+
+input: ./server
+output: BANK STATS:
+        No Account have been opened yet
+//this is to start server 
+
+input: /client 127.0.0.1 //local ip address
+output: HI WELCOME TO CHILES
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: anything but the required commands ie. adljdlaksjdalsdkj
+outpu: ERROR: Invalid argument dummy, use the listed commands:
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: deposit or withdraw any amount without starting an account
+output: ERROR: Session does not exist.
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: start account that does not exist
+output: ERROR: Account does not exist lol: 
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: open arian //open account
+output: Account made!: arian
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: start arian //start the account u just made
+start arian
+Account sessino started: arian
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: deposit 10
+output: Deposit successful
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: withdraw 10
+output: Your account has been withdrawed.
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: deposit 1029320938
+output: Deposit successful
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: balance
+output: Balance: 1029320960.000000
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: finish
+output: Account session finished: arian
+COMMANDS:
+        open
+        start
+        deposit
+        withdraw
+        balance
+        finish
+        exit
+
+input: exit
+output: Session has finished
+-Thanks for using BANK-
+- The Bank has now closed -
